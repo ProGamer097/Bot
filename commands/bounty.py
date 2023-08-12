@@ -1,5 +1,5 @@
 from pyrogram import filters
-from zoro_bot.config.config import db
+from config.config import db
 
 # Assuming db is your database connection
 bounties_collection = db["bounties"]
