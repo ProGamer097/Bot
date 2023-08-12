@@ -1,4 +1,4 @@
-from pyrogram import Client
+from pyrogram import Client, idle
 import asyncio
 import os
 from config.config import LOGGER, BOT_TOKEN, API_HASH, API_ID, SUPPORT_ID, ERROR_ID
