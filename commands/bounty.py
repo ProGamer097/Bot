@@ -1,5 +1,5 @@
 from pyrogram import filters
-from config.config import db
+from database.database import bounties_collection
 
 # Assuming db is your database connection
 bounties_collection = db["bounties"]
