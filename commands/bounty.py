@@ -1,4 +1,4 @@
-from pyrogram import filters
+from pyrogram import filters, Client
 from database.database import db
 
 # Assuming db is your database connection
