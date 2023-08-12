@@ -2,8 +2,7 @@
 dev : Nano
 
 # Structure
-bash```
-
+```bash
 zoro_bot_project/
 │
 ├── zoro_bot.py
