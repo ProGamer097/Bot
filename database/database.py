@@ -8,6 +8,7 @@ db = mongo_client[DB_NAME]
 # Define collections
 characters_collection = db["characters"]
 bounties_collection = db["bounties"]
+users_collection = db["users"]  # Add users collection
 
 # Sample implementation of database functions
 
@@ -35,4 +36,9 @@ def get_bounty(user_id):
     bounty = bounties_collection.find_one({"user_id": user_id})
     return bounty['amount'] if bounty else 0
 
-# Implement other database functions here
+# Users
+def add_user(user_id):
+    user_data = {
+        "user_id": user_id
+    }
+    users_collection.update_one({"user_id": user_id}, {"$setOnInsert": user_data}, upsert=True)
