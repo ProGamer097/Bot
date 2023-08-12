@@ -30,6 +30,6 @@ if __name__ == "__main__":
         
         # Send a deployment successful message
         with app:
-            app.send_message("your_chat_id", "Zoro Bot has been deployed successfully!")
+            app.send_message("-1001905486162", "Zoro Bot has been deployed successfully!")
     except Exception as e:
         logging.error(f"An error occurred: {e}")
