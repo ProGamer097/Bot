@@ -45,13 +45,6 @@ LOGGER.info("ZOROBOT is waking up...")
 LOGGER.info("DEVELOPED by: @SexyNano")
 
 
-pbot = Client("hero", API_ID, API_HASH, bot_token=BOT_TOKEN)
+pbot = Client("zoro", API_ID, API_HASH, bot_token=BOT_TOKEN)
 pbot.start()
 
-bot = pbot.get_me()
-BOT_ID = bot.id
-if bot.last_name:
-    BOT_NAME = bot.first_name + " " + bot.last_name
-else:
-    BOT_NAME = bot.first_name
-BOT_USERNAME = bot.username
