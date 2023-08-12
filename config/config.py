@@ -1,3 +1,8 @@
+import logging
+import time
+
+from pyrogram import Client
+
 API_ID = 14681826  # Your API ID
 API_HASH = "add59ab14dbbccf3c92c65ca4477f2fa"  # Your API Hash
 BOT_TOKEN = "e738a41537msh518a25cf253209fp13958fjsn07ed13e97c48"  # Your bot token
@@ -19,4 +24,29 @@ DEV_USERS = DEV_LIST + OWNER_ID
 SUDO_USERS = SUDOLIST + DEV_USERS  # Enforcers
 SUPPORT_USERS = SUPPORTLIST + SUDO_USERS  # Inspectors
 
-# Other constants and configurations can be added here as needed
+StartTime = time.time()
+
+# enable logging
+FORMAT = "[HERO] %(message)s"
+logging.basicConfig(
+    handlers=[logging.FileHandler("logs.txt"), logging.StreamHandler()],
+    level=logging.INFO,
+    format=FORMAT,
+    datefmt="[%X]",
+)
+
+LOGGER = logging.getLogger('[ISHIKKI]')
+LOGGER.info("HEROBOT is waking up...")
+LOGGER.info("DEVELOPED by: IShIkkI AKABANE")
+
+
+pbot = Client("hero", API_ID, API_HASH, bot_token=BOT_TOKEN)
+pbot.start()
+
+bot = pbot.get_me()
+BOT_ID = bot.id
+if bot.last_name:
+    BOT_NAME = bot.first_name + " " + bot.last_name
+else:
+    BOT_NAME = bot.first_name
+BOT_USERNAME = bot.username
