@@ -2,7 +2,7 @@ import pymongo
 from pymongo import MongoClient
 from config.config import MONGO_DB, DB_NAME
 
-mongo_client = MongoClient(MONGO_URI)
+mongo_client = MongoClient(MONGO_DB)
 db = mongo_client[DB_NAME]
 
 # Define collections
