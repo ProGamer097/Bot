@@ -1,5 +1,5 @@
 from pyrogram import filters
-from config.config import db
+from database.database import db
 
 # Assuming db is your database connection
 users_collection = db["users"]
