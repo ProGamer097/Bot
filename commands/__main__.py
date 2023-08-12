@@ -1,8 +1,8 @@
 from pyrogram import Client
 import asyncio
 import os
-from zoro_bot.config.config import LOGGER, BOT_TOKEN, API_HASH, API_ID, SUPPORT_ID, ERROR_ID
-from zoro_bot.config.config import DOWNLOAD_DIRECTORY
+from config.config import LOGGER, BOT_TOKEN, API_HASH, API_ID, SUPPORT_ID, ERROR_ID
+from config.config import DOWNLOAD_DIRECTORY
 
 async def load_start():
     LOGGER.info("[INFO]: STARTING>>>>>.....")
