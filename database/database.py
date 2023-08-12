@@ -1,6 +1,6 @@
 import pymongo
 from pymongo import MongoClient
-from zoro_bot.config.config import MONGO_URI, DB_NAME
+from config.config import MONGO_DB, DB_NAME
 
 mongo_client = MongoClient(MONGO_URI)
 db = mongo_client[DB_NAME]
