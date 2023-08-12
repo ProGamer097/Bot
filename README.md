@@ -3,6 +3,7 @@ dev : Nano
 
 # Structure
 bash```
+
 zoro_bot_project/
 │
 ├── zoro_bot.py
@@ -28,4 +29,5 @@ zoro_bot_project/
 │   └── config.py
 │
 └── __main__.py
+
 ```
