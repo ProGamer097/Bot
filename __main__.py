@@ -3,7 +3,7 @@ from pyrogram import Client
 from zoro_bot.config.config import API_ID, API_HASH, BOT_TOKEN
 
 # Import commands from each module
-from commands import start, bounty, crew, fight, passive, topcrews, xinfo, xtop, other_commands
+from commands import start, bounty, upload
 from database import init
 
 # Configure logging
@@ -20,13 +20,7 @@ if __name__ == "__main__":
         # Load command modules
         start.load(app)
         bounty.load(app)
-        crew.load(app)
-        fight.load(app)
-        passive.load(app)
-        topcrews.load(app)
-        xinfo.load(app)
-        xtop.load(app)
-        other_commands.load(app)
+        upload.load(app)      
         
         # Run the Pyrogram client
         app.start()
