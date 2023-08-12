@@ -14,6 +14,8 @@ SUPPORT_ID = -1001905486162  # devslab
 DOWNLOAD_DIRECTORY = "./"
 
 MONGO_DB = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"
+DB_NAME = "zoro"
+
 
 OWNER_ID = [6198858059]
 
