@@ -2,8 +2,8 @@ import random
 import asyncio
 import os
 from pyrogram import Client
-from Hero import LOGGER, BOT_TOKEN, API_HASH, API_ID, SUPPORT_ID, ERROR_ID
-from Hero.config import DOWNLOAD_DIRECTORY
+from config.config import LOGGER, BOT_TOKEN, API_HASH, API_ID, SUPPORT_ID, ERROR_ID
+from config.config import DOWNLOAD_DIRECTORY
 
 async def load_start():
     LOGGER.info("[INFO]: STARTING>>>>>.....")
