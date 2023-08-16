@@ -1,8 +1,9 @@
-from pyrogram import Client, idle
+import random
 import asyncio
 import os
-from config.config import LOGGER, BOT_TOKEN, API_HASH, API_ID, SUPPORT_ID, ERROR_ID
-from config.config import DOWNLOAD_DIRECTORY
+from pyrogram import Client
+from Hero import LOGGER, BOT_TOKEN, API_HASH, API_ID, SUPPORT_ID, ERROR_ID
+from Hero.config import DOWNLOAD_DIRECTORY
 
 async def load_start():
     LOGGER.info("[INFO]: STARTING>>>>>.....")
@@ -23,7 +24,7 @@ async def load_start():
     try:
         await g.delete()
     except:
-        LOGGER.info("Deletion Failled!!!!")
+        LOGGER.info("Deletion Failed!!!!")
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop_policy().get_event_loop()
@@ -34,16 +35,10 @@ if __name__ == "__main__":
         api_id=API_ID,
         api_hash=API_HASH,
         bot_token=BOT_TOKEN,
-        workers=min(32, os.cpu_count() + 4),
         workdir=DOWNLOAD_DIRECTORY,
         sleep_threshold=60,
-        in_memory=True,
-        plugins={
-            "root": "commands",  # Adjust the path to your commands directory
-        },
     )
-    
+
     app.start()
 
-    idle()
-    loop.close()
+    loop.run_forever()
