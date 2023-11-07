@@ -30,3 +30,6 @@ zoro_bot_project/
 └── __main__.py
 
 ```
+deploy on heroku
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/ashui501/Zoro-Game-Bot"> <img 
+src="https://img.shields.io/badge/Deploy%20To%20Heroku-pink?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
