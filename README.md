@@ -1,5 +1,5 @@
 # Zoro-Game-Bot
-dev : Nano
+dev : itachi
 
 # Structure
 ```bash
