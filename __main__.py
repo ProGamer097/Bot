@@ -1,6 +1,6 @@
 import logging
 from pyrogram import Client
-from bot.config.config import API_ID, API_HASH, BOT_TOKEN
+from config import API_ID, API_HASH, BOT_TOKEN
 
 # Import commands from each module
 from commands import start, bounty, upload
