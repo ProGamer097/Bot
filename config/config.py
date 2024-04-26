@@ -3,21 +3,21 @@ import time
 
 from pyrogram import Client
 
-API_ID = 14681826  # Your API ID
-API_HASH = "add59ab14dbbccf3c92c65ca4477f2fa"  # Your API Hash
+API_ID = 20457610  # Your API ID
+API_HASH = "b7de0dfecd19375d3f84dbedaeb92537"  # Your API Hash
 BOT_TOKEN = "7113297786:AAF9HmuUdKTh_Fckjm789QwD3IvcyB7-6DU"  # Your bot token
 
-ERROR_ID = "-1001905486162"  # private -- Blue Errors log
+ERROR_ID = "-1002083898719"  # private -- Blue Errors log
 SUPPORT_CHAT = "naruto_support1"
-SUPPORT_ID = "-1001905486162"  # devslab
+SUPPORT_ID = "-1002083898719"  # devslab
 
 DOWNLOAD_DIRECTORY = "./"
 
-MONGO_DB = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"
+MONGO_DB = "mongodb+srv://vinamratiwari579:m6YDRYH8HbwuEqxt@cluster0.x7ac1wt.mongodb.net/?retryWrites=true&w=majority"
 DB_NAME = "zoro"
 
 
-OWNER_ID = [6198858059]
+OWNER_ID = [6590287973]
 
 SUDOLIST = []  # REPORTERS
 SUPPORTLIST = []  # Inspectors
@@ -39,7 +39,7 @@ logging.basicConfig(
 
 LOGGER = logging.getLogger('[NANO]')
 LOGGER.info("ZOROBOT is waking up...")
-LOGGER.info("DEVELOPED by: @SexyNano")
+LOGGER.info("DEVELOPED by: @naruto_of_telegram")
 
 
 pbot = Client("hero", API_ID, API_HASH, bot_token=BOT_TOKEN)
