@@ -5,10 +5,10 @@ from pyrogram import Client
 
 API_ID = 14681826  # Your API ID
 API_HASH = "add59ab14dbbccf3c92c65ca4477f2fa"  # Your API Hash
-BOT_TOKEN = "6206599982:AAGELlIUapiHd88l5z4YuVwXp1h3tHMfotY"  # Your bot token
+BOT_TOKEN = "7113297786:AAF9HmuUdKTh_Fckjm789QwD3IvcyB7-6DU"  # Your bot token
 
 ERROR_ID = "-1001905486162"  # private -- Blue Errors log
-SUPPORT_CHAT = "NanoSTestingArea"
+SUPPORT_CHAT = "naruto_support1"
 SUPPORT_ID = "-1001905486162"  # devslab
 
 DOWNLOAD_DIRECTORY = "./"
