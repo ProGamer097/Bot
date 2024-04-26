@@ -1,1 +1,1 @@
-worker: python3 zoro.py
+worker: python3 __main__.py
