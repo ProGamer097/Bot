@@ -5,7 +5,7 @@ from pyrogram import Client
 
 API_ID = 20457610  # Your API ID
 API_HASH = "b7de0dfecd19375d3f84dbedaeb92537"  # Your API Hash
-BOT_TOKEN = "7113297786:AAF9HmuUdKTh_Fckjm789QwD3IvcyB7-6DU"  # Your bot token
+BOT_TOKEN = "7113297786:AAFS2ay9_nr8VwCHUe4nLlrPRwHNV5xErb8"  # Your bot token
 
 ERROR_ID = "-1002083898719"  # private -- Blue Errors log
 SUPPORT_CHAT = "naruto_support1"
